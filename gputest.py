@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 from datetime import datetime
 
-shape = (int(10000), int(10000))
+shape = (int(20000), int(20000))
 
 with tf.device("/gpu:0"):
     random_matrix = tf.random_uniform(shape=shape, minval=0, maxval=1)
